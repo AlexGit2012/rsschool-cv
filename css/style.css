@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper {
+    width: 80vw;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header > h1 {
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    color: red;
+}
+
+.myInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.myInfo > img {
+    height: 250px;
+    margin-right: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .myInfo > img {
+        height: 150px;
+        margin-left: 50px;
+    }
+}
