@@ -12,13 +12,15 @@
 <header class="header">
     <h1>CV Karavaychik Alexey - Frontend developer</h1>
 </header>
-<div class="wrapper">
+<main class="wrapper">
     <section class="myInfo">
         <div>
             <h2>Name:</h2>
             <p>Karavaychik Alexey</p>
         </div>
-        <img src="assets/images/photo.png" alt="">
+        <figure>
+            <img src="assets/images/photo.png" alt="Karavaychik Alexey Photo">
+        </figure>
     </section>
     <section>
         <h2>Contacts:</h2>
@@ -37,7 +39,15 @@
     </section>
     <section>
         <h2>Skills: </h2>
-        <p>HTML, CSS, JavaScript (ES6), ReactJS, Redux, Git, TypeScript.</p>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>ReactJS</li>
+            <li>Redux</li>
+            <li>Git</li>
+            <li>TypeScript</li>
+        </ul>
         <p><strong>Familiar with:</strong>
             SOLID, Axios, SPA, FLUX, BLL, DAL, selectors, hooks, context API, HOC, routs, REST API,
             http requests, promises, event loop, lexical environment, semantic HTML, OOP,
@@ -52,6 +62,29 @@
         <p>-</p>
     </section>
     <section>
+        <h2>Code example:</h2>
+        <p>// Search button function</p>
+        <p><code>
+            document.querySelector(".search__button").addEventListener("click", ()=>{
+            let inputValue = document.querySelector(".search__input")
+        </code></p>
+
+        <p><code>
+            filteredArr = data.users.filter(el=>{
+            if ((el.name.toLowerCase().indexOf(inputValue.value.toLowerCase())+1)) return el;
+            if ((el.native_name.toLowerCase().indexOf(inputValue.value.toLowerCase())+1)) return el;
+            })
+        </code></p>
+
+        <p>
+            <code>
+                renderArr(filteredArr)}
+            </code>
+        </p>
+
+
+    </section>
+    <section>
         <h2>Courses:</h2>
         <ul>
             <li>Java SE (full-time course) – 2013,</li>
@@ -64,7 +97,7 @@
         <h2>English:</h2>
         <p>English level - Pre-intermediate</p>
     </section>
-</div>
+</main>
 <footer>
     <p>&#169; Alexey Karavaychik, 2020.</p>
 </footer>
